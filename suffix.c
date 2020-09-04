@@ -27,49 +27,28 @@ void print_with_suffix(long n)
         // positive case
         else
         {
-            // checking if last digit is 1
-            if ((n % 10) == 1)
+            // checking if last two digits are 11, 12 or 13
+            if (((n % 100) >= 11) && ((n % 100) <= 13))
             {
-                // checking if second last digit is 1
-                // thus last two digits are 11
-                if (((n / 10) % 10) == 1)
-                {
-                    cs1010_println_string("th");    
-                }
-                else
-                {
+                cs1010_println_string("th");
+            }
+
+            // checking if last digit is 1
+            else if ((n % 10) == 1)
+            {
                     cs1010_println_string("st");
-                }
             }
 
             // checking if last digit is 2
             else if ((n % 10) == 2)
             {
-                // checking if second last digit is 1
-                // thus last two digits are 12
-                if (((n / 10) % 10) == 1)
-                {
-                    cs1010_println_string("th");
-                }
-                else
-                {
                     cs1010_println_string("nd");
-                }
             }
 
             // checking if last digit is 3
             else if ((n % 10) == 3)
             {
-                // checking if second last digit is 1
-                // thus last two digits are 13
-                if (((n / 10) % 10) == 1)
-                {
-                    cs1010_println_string("th");
-                }
-                else
-                {
                     cs1010_println_string("rd");
-                }
             }
 
             // any last digit that is not 1, 2 or 3
