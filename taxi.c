@@ -144,15 +144,13 @@ double calc_total_fare(long day, long hrs, long mins, long dist)
 
 int main()
 {
-    long* values = cs1010_read_long_array(4);       // store values for day, hours, minutes and distance 
+    long* values = cs1010_read_long_array(4);       // variable to input the day, hours, minutes and distance 
     if (values != NULL)
     {
-        long day, hrs, mins, dist;                  // variables for calculation
-
-        day = values[0];
-        hrs = values[1];
-        mins = values[2];
-        dist = values[3];
+        long day = values[0];       // variable storing the day
+        long hrs = values[1];       // variable storing the hour of boarding
+        long mins = values[2];      // variable storing the minute of boarding within the hour
+        long dist = values[3];      // variable storing the distance travelled
 
         // filter illogical inputs, assuming only positive inputs are provided
         if ((day > 0) && (day <= 7) && (hrs >= 0) && (hrs < 24) && (mins >= 0) && (mins < 60))
