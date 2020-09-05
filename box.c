@@ -39,11 +39,9 @@ int main()
     long* values = cs1010_read_long_array(3);               // stores values for length, width and height 
     if (values != NULL)
     {
-        long length, width, height;                         // variables used for calculation
-        
-        length = values[0];
-        width = values[1];
-        height = values[2];
+        long length = values[0];
+        long width = values[1];
+        long height = values[2];
 
         // calculating the total surface area of box
         long area_TB = area_of_rectangle(length, width);    // area of top and bottom
