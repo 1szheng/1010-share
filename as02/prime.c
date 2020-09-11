@@ -46,12 +46,8 @@ void prime(long number)
         if ((number % 2) == 0)
         {
             number -= 1;
-            is_prime = check_prime(number);
         }
-        else
-        {
-            is_prime = check_prime(number);
-        }
+        is_prime = check_prime(number);
 
         // loop to find the next largest prime smaller than number
         while (is_prime != true)
