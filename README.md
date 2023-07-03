@@ -1,4 +1,4 @@
-# Just an archive for CS1010 assignments / excercises
+# Just an archive for __1010 assignments / excercises
 ```
 ░░░░░░░░▄▄▄▀▀▀▄▄███▄░░░░░░░░░░░░░░
 ░░░░░▄▀▀░░░░░░░▐░▀██▌░░░░░░░░░░░░░
